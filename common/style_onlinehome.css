@@ -1,0 +1,16 @@
+﻿body,div,td
+	{
+	background: #gray;
+	margin: 10px 20px;
+	line-height: 150%;
+	word-wrap:break-word;
+
+	}
+
+a {
+	
+	text-decoration: none !important;
+}
+a:hover {
+	color: #060606 !important;
+}

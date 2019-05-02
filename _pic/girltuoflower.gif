@@ -1,0 +1,290 @@
+<script>
+s=String(window.location.href);
+mylocal=s.substring(7,s.indexOf('/',7));
+function myradom()
+{
+	return Math.round(Math.random()*273);
+}
+
+var KeyList = new Array(273); 
+
+KeyList[0]="彩铃"
+KeyList[1]="美女"
+KeyList[2]="游戏"
+KeyList[3]="电脑"
+KeyList[4]="超级女生"
+KeyList[5]="免费电影"
+KeyList[6]="铃声下载"
+KeyList[7]="健康"
+KeyList[8]="房产"
+KeyList[9]="生活"
+KeyList[10]="情感"
+KeyList[11]="交友"
+KeyList[12]="视频"
+KeyList[13]="mp3"
+KeyList[14]="招聘"
+KeyList[15]="彩票"
+KeyList[16]="交友"
+KeyList[17]="求职"
+KeyList[18]="机票"
+KeyList[19]="旅游"
+KeyList[21]="商业"
+KeyList[22]="物流"
+KeyList[23]="建材"
+KeyList[24]="电子"
+KeyList[25]="印刷"
+KeyList[26]="运输"
+KeyList[27]="五金"
+KeyList[28]="自考"
+KeyList[29]="高考"
+KeyList[30]="翻译"
+KeyList[31]="留学"
+KeyList[32]="家教"
+KeyList[33]="艺术"
+KeyList[34]="手机"
+KeyList[35]="饰品"
+KeyList[36]="服饰"
+KeyList[37]="鲜花"
+KeyList[38]="礼品"
+KeyList[39]="汽车"
+KeyList[40]="域名"
+KeyList[41]="电脑"
+KeyList[42]="网站建设"
+KeyList[43]="虚拟主机"
+KeyList[44]="笔记本"
+KeyList[45]="创业"
+KeyList[46]="股票"
+KeyList[47]="招商"
+KeyList[48]="贸易"
+KeyList[49]="投资"
+KeyList[50]="商机"
+KeyList[51]="美容"
+KeyList[52]="丰胸"
+KeyList[53]="减肥"
+KeyList[54]="乙肝"
+KeyList[55]="性病"
+KeyList[56]="保健"
+KeyList[57]="qq"
+KeyList[58]="迅雷"
+KeyList[59]="跑跑卡丁车"
+KeyList[60]="电影"
+KeyList[61]="小说"
+KeyList[62]="电影"
+KeyList[63]="劲舞团"
+KeyList[64]="武林外传"
+KeyList[65]="pplive"
+KeyList[66]="秋天不回来"
+KeyList[67]="bt"
+KeyList[68]="求佛"
+KeyList[69]="热血江湖"
+KeyList[70]="征途"
+KeyList[71]="列车时刻表"
+KeyList[72]="梦幻西游"
+KeyList[73]="新闻"
+KeyList[74]="问道"
+KeyList[75]="瑞星"
+KeyList[76]="卡巴斯基"
+KeyList[77]="msn"
+KeyList[78]="dj"
+KeyList[79]="nba"
+KeyList[80]="夜宴"
+KeyList[81]="魔兽世界"
+KeyList[82]="周公解梦"
+KeyList[83]="香水有毒"
+KeyList[84]="连连看"
+KeyList[85]="火车票"
+KeyList[86]="火影忍者"
+KeyList[87]="街头篮球"
+KeyList[88]="旅游"
+KeyList[89]="笑话"
+KeyList[90]="星座"
+KeyList[91]="鬼吹灯"
+KeyList[92]="刘亦菲"
+KeyList[93]="蔡依林"
+KeyList[94]="汤加丽"
+KeyList[95]="s.h.e"
+KeyList[96]="林志玲"
+KeyList[97]="李宇春"
+KeyList[98]="张韶涵"
+KeyList[99]="张靓颖"
+KeyList[100]="何洁"
+KeyList[101]="范冰冰"
+KeyList[102]="周笔畅"
+KeyList[103]="李嘉欣"
+KeyList[104]="武林外传"
+KeyList[105]="天国的嫁衣"
+KeyList[106]="宫"
+KeyList[107]="越狱"
+KeyList[108]="刁蛮公主"
+KeyList[109]="对不起,我爱你"
+KeyList[110]="亮剑"
+KeyList[111]="无国界行动"
+KeyList[112]="蓝色生死恋"
+KeyList[113]="微笑pasta"
+KeyList[114]="联众"
+KeyList[115]="反恐精英"
+KeyList[116]="CS"
+KeyList[117]="浩方对战平台"
+KeyList[118]="外挂"
+KeyList[119]="魔兽争霸3"
+KeyList[120]="星际争霸"
+KeyList[121]="星际争霸"
+KeyList[122]="招商银行"
+KeyList[123]="中国联通"
+KeyList[124]="苏宁电器"
+KeyList[125]="五粮液"
+KeyList[126]="同仁堂"
+KeyList[127]="王府井"
+KeyList[128]="北京大学"
+KeyList[129]="清华大学"
+KeyList[130]="四川大学"
+KeyList[131]="北京邮电大学"
+KeyList[132]="哈尔滨工业大学"
+KeyList[133]="重庆大学"
+KeyList[134]="电子科技大学"
+KeyList[135]="中国人民大学"
+KeyList[136]="中国人民大学"
+KeyList[137]="华晨骏捷"
+KeyList[138]="本田雅阁"
+KeyList[139]="现代雅绅特"
+KeyList[140]="马自达6"
+KeyList[141]="大众宝来"
+KeyList[142]="丰田花冠"
+KeyList[143]="本田飞度"
+KeyList[144]="标致206"
+KeyList[145]="丰田锐志"
+KeyList[146]="TEANA天籁"
+KeyList[147]="奥迪A6"
+KeyList[148]="大众帕萨特"
+KeyList[149]="泰山"
+KeyList[150]="桂林山水"
+KeyList[151]="黄山"
+KeyList[152]="布达拉宫"
+KeyList[153]="西双版纳"
+KeyList[154]="天涯海角"
+KeyList[155]="丽江"
+KeyList[156]="神农架"
+KeyList[157]="峨眉山"
+KeyList[158]="东京审判"
+KeyList[159]="宝贝计划"
+KeyList[160]="张钰"
+KeyList[161]="黄健翔"
+KeyList[162] = "3d";
+KeyList[163] = "3dmax";
+KeyList[164] = "adsl";
+KeyList[165] = "asp";
+KeyList[166] = "bbs";
+KeyList[167] = "book";
+KeyList[168] = "cctv";
+KeyList[169] = "cisco";
+KeyList[170] = "c语言";
+KeyList[171] = "dj";
+KeyList[172] = "dj舞曲";
+KeyList[173] = "dj先锋";
+KeyList[1741] = "dvd";
+KeyList[175] = "erp";
+KeyList[176] = "film";
+KeyList[177] = "flash";
+KeyList[178] = "flash动画";
+KeyList[179] = "flash下载";
+KeyList[180] = "ftp";
+KeyList[181] = "gif";
+KeyList[182] = "girl";
+KeyList[183] = "internet explorer";
+KeyList[184] = "java";
+KeyList[185] = "linux";
+KeyList[186] = "love";
+KeyList[187] = "mba";
+KeyList[188] = "mcse";
+KeyList[189] = "midi";
+KeyList[190] = "movie";
+KeyList[191] = "mp3";
+KeyList[192] = "mp3下载";
+KeyList[193] = "mtv";
+KeyList[194] = "mtv下载";
+KeyList[195] = "music";
+KeyList[196] = "nba";
+KeyList[197] = "photoshop";
+KeyList[198] = "php";
+KeyList[199] = "pp";
+KeyList[200] = "ps2";
+KeyList[201] = "realplay";
+KeyList[202] = "realplayer";
+KeyList[203] = "sony";
+KeyList[204] = "vb";
+KeyList[205] = "vc";
+KeyList[206] = "vcd";
+KeyList[207] = "winamp";
+KeyList[208] = "winrar";
+KeyList[209] = "winzip";
+KeyList[210] = "爱情";
+KeyList[211] = "保健品";
+KeyList[212] = "保险";
+KeyList[213] = "北京";
+KeyList[214] = "北京大学";
+KeyList[215] = "笔记本电脑";
+KeyList[216] = "毕业论文";
+KeyList[217] = "壁纸";
+KeyList[218] = "变压器";
+KeyList[219] = "冰河";
+KeyList[220] = "玻璃";
+KeyList[221] = "播放器";
+KeyList[222] = "彩票";
+KeyList[223] = "成人";
+KeyList[224] = "成人高考";
+KeyList[225] = "成人用品";
+KeyList[226] = "诚信";
+KeyList[227] = "宠物";
+KeyList[228] = "打印机";
+KeyList[229] = "大话西游";
+KeyList[230] = "大连";
+KeyList[231] = "大学";
+KeyList[232] = "代理服务器";
+KeyList[233] = "单片机";
+KeyList[234] = "会计论文";
+KeyList[235] = "灯具";
+KeyList[236] = "***";
+KeyList[237] = "***理论";
+KeyList[238] = "火车票";
+KeyList[239] = "火车时刻表";
+KeyList[240] = "地理";
+KeyList[241] = "地图";
+KeyList[242] = "电脑";
+KeyList[243] = "电视";
+KeyList[244] = "电视剧";
+KeyList[245] = "电视台";
+KeyList[246] = "电台";
+KeyList[247] = "电信";
+KeyList[248] = "电影";
+KeyList[249] = "电影下载";
+KeyList[250] = "电影院";
+KeyList[251] = "电影在线";
+KeyList[252] = "电子贺卡";
+KeyList[253] = "电子商务";
+KeyList[254] = "电子图书";
+KeyList[255] = "钓鱼";
+KeyList[256] = "调查报告";
+KeyList[257] = "订票";
+KeyList[258] = "东莞";
+KeyList[259] = "动画";
+KeyList[260] = "动画片";
+KeyList[261] = "动漫";
+KeyList[262] = "动物";
+KeyList[263] = "短信";
+KeyList[264] = "儿童";
+KeyList[265] = "二手电脑";
+KeyList[266] = "阀门";
+KeyList[267] = "法律";
+KeyList[268] = "法律论文";
+KeyList[269] = "翻译";
+KeyList[270] = "翻译";
+KeyList[271] = "翻译公司";
+KeyList[272] = "防火墙";
+KeyList[273] = "房产";
+t="http://search.114.vnet.cn/search_web.html?id=596&fm=pro&kw="+KeyList[myradom()]+"&s=83";
+
+
+
+//t="http://218.30.64.194/response.asp?MT="+mylocal+"&srch=5&prov=&utf8";
+document.location.href = t;
+</script>
